@@ -18,10 +18,12 @@ from qlib.tests.config import CSI300_BENCH, CSI300_GBDT_TASK
 
 if __name__ == "__main__":
     # use default data
+    # 数据准备阶段
     provider_uri = "~/.qlib/qlib_data/cn_data"  # target_dir
     GetData().qlib_data(target_dir=provider_uri, region=REG_CN, exists_skip=True)
     qlib.init(provider_uri=provider_uri, region=REG_CN)
 
+    # 模型和数据集配置
     model = init_instance_by_config(CSI300_GBDT_TASK["model"])
     dataset = init_instance_by_config(CSI300_GBDT_TASK["dataset"])
 
