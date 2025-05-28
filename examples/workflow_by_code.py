@@ -6,6 +6,7 @@ Qlib provides two kinds of interfaces.
 (2) Qlib is designed in a modularized way and supports creating research workflow by code just like building blocks.
 
 The interface of (1) is `qrun XXX.yaml`.  The interface of (2) is script like this, which nearly does the same thing as `qrun XXX.yaml`
+代码最终目的：验证这套"LightGBM模型 + TopkDropout策略"的组合在中国股市能否持续盈利。
 """
 import qlib
 from qlib.constant import REG_CN
