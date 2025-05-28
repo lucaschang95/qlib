@@ -46,17 +46,17 @@ US_DATASET_CONFIG = {
             "class": "Alpha158",
             "module_path": "qlib.contrib.data.handler",
             "kwargs": {
-                "start_time": "2008-01-01",
-                "end_time": "2020-08-01",
-                "fit_start_time": "2008-01-01",
-                "fit_end_time": "2014-12-31",
-                "instruments": SP500_MARKET,
+                "start_time": "2017-01-01",
+                "end_time": "2020-11-10",
+                "fit_start_time": "2017-01-01",
+                "fit_end_time": "2018-12-31",
+                "instruments": "all",
             },
         },
         "segments": {
-            "train": ("2008-01-01", "2014-12-31"),
-            "valid": ("2015-01-01", "2016-12-31"),
-            "test": ("2017-01-01", "2020-08-01"),
+            "train": ("2017-01-01", "2018-12-31"),
+            "valid": ("2019-01-01", "2019-12-31"),
+            "test": ("2020-01-01", "2020-11-10"),
         },
     },
 }
@@ -99,8 +99,8 @@ if __name__ == "__main__":
             },
         },
         "backtest": {
-            "start_time": "2017-01-01",
-            "end_time": "2020-08-01",
+            "start_time": "2020-01-01",
+            "end_time": "2020-11-01",
             "account": 100000000,  # 1亿美元初始资金
             "benchmark": SP500_BENCH,
             "exchange_kwargs": {
