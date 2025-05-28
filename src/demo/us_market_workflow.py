@@ -17,7 +17,7 @@ from qlib.tests.data import GetData
 
 
 # 美国市场配置
-NASDAQ100_MARKET = "nasdaq100"
+SP500_MARKET = "sp500"
 SP500_BENCH = "^GSPC"  # S&P500指数作为基准
 
 # LightGBM模型配置
@@ -50,7 +50,7 @@ US_DATASET_CONFIG = {
                 "end_time": "2020-08-01",
                 "fit_start_time": "2008-01-01",
                 "fit_end_time": "2014-12-31",
-                "instruments": NASDAQ100_MARKET,
+                "instruments": SP500_MARKET,
             },
         },
         "segments": {
